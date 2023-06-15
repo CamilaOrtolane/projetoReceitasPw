@@ -1,0 +1,17 @@
+.container{
+    margin: 50px;
+}
+.textareas{
+    width: 30em;
+}
+
+label {
+    margin-top: 15px;
+}
+
+h6 {
+    margin-top: 15px;
+}
+.largura{
+    width: 5em;
+}
