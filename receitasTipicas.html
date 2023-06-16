@@ -14,49 +14,58 @@
     <header>
         <h1>Agostine</h1>
         <nav>
-          <a href="index.html">Home</a>
-          <a href="#">Quem somos</a>
-          <a href="#">Doces</a>
-          <a href="salgados.html">Salgados</a>
+            <a href="index.html">Home</a>
+            <a href="#">Quem somos</a>
+            <a href="#">Doces</a>
+            <a href="salgados.html">Salgados</a>
+            <a href="receitasTipicas.html">Receitas Típicas</a> 
+            <a href="temperos.html">Temperos</a>    
         </nav>
     </header>
     <main>
-        
-    <div class="container">
-        <div class="form-grup">
-            <label>Nome:</label>
-            <input class="form-control" type="text" name="nome" id="nome" placeholder="">
-        </div>
 
-        <div class="form-grup">
-            <class class="largura">
-                <h6>Local de Origem</h6>
-                <label for="">Cidade:</label>
-                <input class="form-control" type="email" name="email" id="email" placeholder="" >
-                <label for="">Estado:</label>
-                <input class="form-control" type="email" name="email" id="email" placeholder="">
-                <label for="">país:</label>
-                <input class="form-control" type="email" name="email" id="email" placeholder="">
-            </class>
-        
-        </div>
+        <div class="container">
+            <div class="form-grup">
+                <label>Nome:</label>
+                <input class="form-control" type="text" name="nome" id="nome" placeholder="">
+                <div class="form-grup">
+                    <class class="largura">
+                        <h6>Local de Origem</h6>
+                        <div class="card">
+                            <div class="card-body">
+                                <label for="">Cidade:</label>
+                                <input class="form-control" type="text" name="cidade" id="cidade" placeholder="">
+                                <label for="">Estado:</label>
+                                <input class="form-control" type="text" name="estado" id="estado" placeholder="">
+                                <label for="">país:</label>
+                                <input class="form-control" type="text" name="pais" id="pais" placeholder="">
+                            </div>
+                        </div>
+                    </class>
 
-        <div class="textareas">
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Ingredientes</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    <label for="">Tempo de preparo</label>
+                    <input type="text" name="tempo" id="tempo">
+                    <label for="">Porções</label>
+                    <input type="text" name="porcoes" id="porcoes">
+                    
+                    <div class="textareas">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Ingredientes</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Modo de preparo:</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        </div>
+        
+                    </div>
+                </div>
             </div>
-    
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Modo de preparo:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-            </div>
-    
+
+            <button onclick="validate()" style="margin: 15px 0;" type="button" class="btn btn-primary">Salvar</button>
         </div>
-       
-        <button onclick="salvar()" style="margin: 15px 0;" type="button" class="btn btn-primary">Salvar</button>
-    </div>
-    </div>
+        </div>
     </main>
 </body>
 
