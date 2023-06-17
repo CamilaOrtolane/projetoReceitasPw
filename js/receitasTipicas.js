@@ -29,7 +29,7 @@ function validacampo(campo)
     {
         if(campo.value.length < 4)
         {
-            msnErro.textContent = "* O nome deve ter mais de 4caracteres";
+            msnErro.textContent = "* O nome deve ter mais de 4 caracteres";
         }
         else
         {
@@ -72,20 +72,28 @@ function validacampo(campo)
         }
     }
 
+    if(campo.name == "tempo")
+    {
+        if(campo.value == "")
+        {
+            msnErro.textContent = "* Digite o tempo de preparo da receita";
+        }
+        else
+        {
+            msnErro.textContent="";
+        }
+    }
+
+    if(campo.name == "porcao")
+    {
+        if(campo.value == "")
+        {
+            msnErro.textContent = "* Digite a quantidade de porções da receita";
+        }
+        else
+        {
+            msnErro.textContent="";
+        }
+    }
 
 }
-
-// function validaNome(campo){
-    
-//     const msnErro = campo.parentNode.querySelector("[data-erro]");
-
-//     if(campo.name == "nome"){
-//         if(campo.value.length<4){
-//             msnErro.texteContent = "O nome do tempero não pode ter menos que 4 caracteres"
-//         }
-//         else{
-//             msnErro.textContent = "";
-//         }
-//     }
-
-// }

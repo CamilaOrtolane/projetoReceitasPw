@@ -15,9 +15,13 @@ h6 {
 .largura{
     width: 5em;
 }
-.span-required{
-    font-size: 12px;
-    margin: 3px 0 0 1px;
+.mensagem-erro{
     color: #e63636;
-    display: none;
+    font-size: small;
+    
 }
+.larg{
+    width: 30em;
+
+}
+
